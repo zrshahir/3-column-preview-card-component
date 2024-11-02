@@ -58,10 +58,12 @@
       font-weight: 400px; 
       border-radius: 32px; 
       background-color: hsl(0, 0%, 95%);
-      margin-top: 45px;
+      margin-top: 55px;
       padding-top: 55px; 
       height: 16px; 
       width: 145px; 
+      margin: 0; 
+      position: absolute; 
     }
     .first-card, h2 {
       color: hsl(31, 77%, 52%); 
@@ -79,7 +81,8 @@
       width: 24%;
       margin:  0 1% 1% 0; 
       display: grid; 
-      height: 550px; 
+      height: 550px;
+      float: left; 
     }
     .first-card, h1 {
       color:  hsl(0, 0%, 95%); 
@@ -92,40 +95,137 @@
     }
     .sedans-learn-more {
       color:  hsl(31, 77%, 52%); 
+      position: relative; 
     }
     .suvs-learn-more {
       color: hsl(184, 100%, 22%); 
+      position: relative; 
     }
     .luxury-learn-more {
       color: hsl(179, 100%, 13%); 
+      position: relative; 
     }
+    .sedans-learn-more-text, .suvs-learn-more-text, .luxury-learn-more-text {
+      position: absolute; 
+      left: 16px; 
+      top: 24px; 
+    }
+    .sedans-learn-more, .suvs-learn-more, .luxury-learn-more {
+      position: relative;
+      left: 516px; 
+    }
+    .container {
+       width: 300em; 
+       height: 100%; 
+       display: table; 
+       margin: 0 auto; 
+    } 
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      .sedans-learn-more, .suvs-learn-more, .luxury-learn-more {
+        position: fixed;
+        top: 55px; 
+        left: 0; 
+        right: 0; 
+        bottom: 55px; 
+        float: left; 
+        display: flex; 
+        flex-direction: row;  
+      }
+    }
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+      .first-card, .second-card, .third-card {
+        display: table-row;
+        height: 100%; 
+        width: 100%; 
+      }
+    }
+  @media only screen and (max-width: 320px) {
+    .first-card, .second-card, .third-card {
+        display: table-row; 
+        height: 100%; 
+        width: 100%; 
+  }
+}
   </style>
 </head>
 <body>
+  <div class="container">
   <div class="first-card">
   <img src="images/icon-sedans.svg">  
   <h1>SEDANS</h1>
-  <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
-  <h2 class="sedans-learn-more">Learn More</h2>
+  <p>Choose a sedan for its <br/> affordability and excellent <br/> fuel economy. Ideal for <br/> cruising in the city or on <br/> your next road trip.</p>
+  <h2 class="sedans-learn-more"><span class="sedans-learn-more-text">Learn More</span></h2>
   </div>
   <div class="second-card">
   <img src="images/icon-suvs.svg">
   <h1>SUVs</h1>
-  <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
-  <h2 class="suvs-learn-more">Learn More</h2>
+  <p>Take an SUV for its spacious <br/> interior, power, and <br/> versatility. Perfect for your <br/> next family vacation and <br/> off-road adventures.</p>
+  <h2 class="suvs-learn-more"><span class="suvs-learn-more-text">Learn More</span></h2>
   </div>
   <div class="third-card">
   <img src="images/icon-luxury.svg">
   <h1>LUXURY</h1>
-  <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
-  <h2 class="luxury-learn-more">Learn More</h2>
+  <p>Cruise in the best car brands <br/> without the bloated prices. <br/> Enjoy the enhanced comfort <br/> of a luxury rental and arrive <br/> in style.</p>
+  <h2 class="luxury-learn-more"><span class="luxury-learn-more-text">Learn More</span></h2>
   </div>
+  </div>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Zahira Shahir</a>.
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
