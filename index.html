@@ -119,7 +119,32 @@
        height: 100%; 
        display: table; 
        margin: 0 auto; 
+       position: relative; 
     } 
+    .sedans-learn-more, h2 {
+      text-align: center; 
+      display: inline-block; 
+    }
+    .suvs-learn-more, h2 {
+      text-align: center; 
+      display: inline-block; 
+    }
+    .luxury-learn-more, h2 {
+      text-align: center; 
+      display: inline-block; 
+    }
+    .sedans-learn-more-text, h2 {
+      text-align: center; 
+      display: inline-block; 
+    }
+    .suvs-learn-more-text, h2 {
+      text-align: center; 
+      display: inline-block; 
+    }
+    .luxury-learn-more-text, h2 {
+      text-align: center; 
+      display: inline-block; 
+    }
     @media only screen and (min-width: 769px) and (max-width: 992px) {
       .sedans-learn-more, .suvs-learn-more, .luxury-learn-more {
         position: fixed;
@@ -139,13 +164,274 @@
         width: 100%; 
       }
     }
-  @media only screen and (max-width: 320px) {
-    .first-card, .second-card, .third-card {
+    @media only screen and (max-width: 320px) {
+      .first-card, .second-card, .third-card {
         display: table-row; 
         height: 100%; 
         width: 100%; 
+    }
+  } 
+    /*@media only screen and (min-width: 321px) and (max-width: 768px) {
+      .sedans-learn-more, .suvs-learn-more, .luxury-learn-more, .sedans-learn-more-text, .suvs-learn-more-text, .luxury-learn-more-text  {
+        margin: 0;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; 
+    }
   }
-}
+  @media only screen and (max-width: 320px) {
+      .sedans-learn-more, .suvs-learn-more, .luxury-learn-more, .sedans-learn-more-text, .suvs-learn-more-text, .luxury-learn-more-text  {
+        margin: 0; 
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; 
+      }
+  }*/
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .sedans-learn-more, h2 {
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .suvs-learn-more, h2 {
+        margin: 0 auto; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .luxury-learn-more, h2 {
+        margin: 0 auto; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .sedans-learn-more-text, h2 {
+        margin: 0 auto; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .suvs-learn-more-text, h2 {
+        margin: 0 auto; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+  }
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    .luxury-learn-more-text, h2 { 
+        margin: 0 auto; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .sedans-learn-more, h2 {
+        padding: 20px; 
+        height: 200px; 
+        width: 200px; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        text-align: center; 
+        /*bottom: 0;  
+        top: auto; 
+        transform: none; 
+        left: 0; 
+        text-align: center !important;
+        margin: 0 auto; 
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;*/ 
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .suvs-learn-more, h2 {
+        padding: 20px; 
+        height: 200px; 
+        width: 200px; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        text-align: center; 
+        /*bottom: 0;  
+        top: auto; 
+        transform: none; 
+        left: 0; 
+        text-align: center !important;
+        margin: 0 auto; 
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;*/ 
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .luxury-learn-more, h2 {
+        padding: 20px; 
+        height: 200px; 
+        width: 200px; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        text-align: center; 
+        /*bottom: 0;  
+        top: auto; 
+        transform: none; 
+        left: 0; 
+        text-align: center !important;
+        margin: 0 auto; 
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;*/
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .sedans-learn-more-text, h2 {
+        padding: 20px; 
+        height: 200px; 
+        width: 200px; 
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        text-align: center; 
+        /*position: fixed; 
+        bottom: 0;  
+        top: auto; 
+        transform: none; 
+        left: 0; 
+        text-align: center !important;
+        margin: 0 auto; 
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;*/ 
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .suvs-learn-more-text, h2 {
+        padding: 20px; 
+        height: 200px; 
+        width: 200px; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        text-align: center; 
+        /*bottom: 0;  
+        top: auto; 
+        transform: none; 
+        left: 0; 
+        text-align: center !important;
+        margin: 0 auto; 
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;*/ 
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .luxury-learn-more-text, h2 { 
+        padding: 20px; 
+        height: 200px; 
+        width: 200px; 
+        position: fixed; 
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        text-align: center; 
+        /*bottom: 0;  
+        top: auto; 
+        transform: none; 
+        left: 0; 
+        text-align: center !important;
+        margin: 0 auto; 
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;*/ 
+    }
+  }
   </style>
 </head>
 <body>
@@ -175,6 +461,212 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
